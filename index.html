@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Ilja Repko ir19044
+-->
+<html>
+    <head>
+        <title>Meteorites</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="meteorites.js"></script>
+        <script defer type="text/javascript" src="homework3.js"></script>
+        <style>
+            table, td, th { border: 1px solid gray; border-collapse: collapse;}
+            td:nth-child(5), td:nth-child(6), td:nth-child(7) {text-align: right;}
+        </style>
+    </head>
+    <body>
+        <h1>Meteorites</h1>
+        <div>
+          <div>
+            <label for="class-select">Class:</label>
+            <select id="class-select"></select>
+          </div>
+          <div>
+            <label for="year-from">Year from:</label>      
+            <input type="text" id="year-from">
+          </div>    
+          <div>
+            <label for="year-until">Year until:</label>      
+            <input type="text" id="year-until">
+          </div>        
+          <div>
+            <label for="search">Name:</label>      
+            <input type="search" id="search" oninput="show_list()">
+          </div>
+          <div id="buttons" class="hidden">
+            <button id="show-list" onclick="show_list()">Show list</button>
+            <button id="hide" onclick="hide_coordinates()">Hide coordinates</button>      
+          </div>
+            <table> 
+            </table>
+          </div>
+        </div>
+    </body>
+</html>
